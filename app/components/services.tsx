@@ -293,14 +293,24 @@ export default function Portfolio() {
 
           <div className="flex gap-4 justify-center mb-12">
             <button 
-              onClick={() => document.getElementById('projets').scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => {
+                const el = document.getElementById('projets');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 flex items-center gap-2"
             >
               Voir mes projets
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button 
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                          onClick={() => {
+                const el = document.getElementById('contact');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="px-8 py-4 border-2 border-blue-500/50 rounded-lg font-semibold hover:bg-blue-500/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm"
             >
               Me contacter
