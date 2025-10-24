@@ -30,7 +30,7 @@ export default function Portfolio() {
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    alert('Message envoyé avec succès !');
+    alert('Traitament!');
     setFormData({ name: '', email: '', subject: '', message: '' });
     
   };
