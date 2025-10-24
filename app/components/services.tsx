@@ -123,14 +123,14 @@ export default function Portfolio() {
       title: "Dashboard Analytics",
       category: "Data Analysis",
       description: "Tableau de bord interactif pour visualiser les KPIs business en temps réel",
-      image: "/projects/dashboard.jpg", // Remplacez par votre vraie image
+      image: "/images/anal.jpg", // Remplacez par votre vraie image
       tags: ["Python", "Power BI", "SQL"]
     },
     {
       title: "Prédiction des Ventes",
       category: "Data Analysis",
       description: "Modèle ML pour prédire les tendances de ventes avec 92% de précision",
-      image: "/projects/ml-prediction.jpg", 
+      image: "/images/ma.jpg", 
       tags: ["Python", "Scikit-learn", "Pandas"]
     },
     {
@@ -433,11 +433,6 @@ export default function Portfolio() {
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    onError={(e) => {
-                      // Image de fallback si l'image n'existe pas
-                      e.target.style.display = 'none';
-                      e.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-600 text-6xl">${project.title.charAt(0)}</div>`;
-                    }}
                   />
                 </div>
 

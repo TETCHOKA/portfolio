@@ -127,11 +127,6 @@ function Projets(){
                             src={project.image} 
                             alt={project.title}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                            onError={(e) => {
-                              // Image de fallback si l'image n'existe pas
-                              e.target.style.display = 'none';
-                              e.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-600 text-6xl">${project.title.charAt(0)}</div>`;
-                            }}
                           />
                         </div>
         
