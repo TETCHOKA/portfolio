@@ -13,7 +13,7 @@ export default function Portfolio() {
   });
   const Proil = {
     name: "TETCHOKA PIERRE LOIC",
-    url: "/images/profile.jpg"
+    url: "/images/python.jpeg"
   }
   const [activeFilter, setActiveFilter] = useState('Tous');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Portfolio() {
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    alert('Traitament!');
+    alert('Traitement!');
     setFormData({ name: '', email: '', subject: '', message: '' });
     
   };
@@ -42,6 +42,8 @@ export default function Portfolio() {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setMobileMenuOpen(false);
   };
+
+  
 
   const skills = [
     {
