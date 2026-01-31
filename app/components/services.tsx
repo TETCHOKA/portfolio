@@ -322,16 +322,16 @@ export default function Portfolio() {
           <div className="flex gap-6 justify-center">
             {[
               { Icon: Github, href: "https://github.com/TETCHOKA", target: "_blank" },
-              { Icon: Linkedin, href: "#" },
+              { Icon: Linkedin, href: "https://www.linkedin.com/in/pierre-tetchoka-a66457319?utm_source=share_via&utm_content=profile&utm_medium=member_ios", target: "_blank"},
               { Icon: Mail, href:"mailto:tetchokapierre3@gmail.com" }
             ].map(({ Icon, href }, i) => (
-              <a
+              <Link
                 key={i}
                 href={href}
                 className="p-3 bg-slate-800/50 rounded-lg hover:bg-blue-500/20 hover:scale-110 transition-all duration-300 backdrop-blur-sm border border-blue-500/20"
               >
                 <Icon className="w-6 h-6" />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
