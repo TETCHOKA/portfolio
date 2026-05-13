@@ -71,7 +71,7 @@ export default function Portfolio() {
         { name: "Power BI", level: 85 },
         { name: "Machine Learning", level: 78 },
         { name: "Excel", level: 80 },
-        { name: "Data Visualization", level: 87 }
+        { name: "Data Visualization", level: 88 }
       ]
     },
     {
